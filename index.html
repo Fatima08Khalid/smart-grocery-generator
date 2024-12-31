@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+        }
+ 
+        /* Header Styling */
+        header {
+            color: #000;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .logo h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav .signup-btn {
+            text-decoration: none;
+            color: #fff;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav .signup-btn:hover {
+            background-color: #555;
+        }
+
+        .login-btn {
+            text-decoration: none;
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Container Grid Layout */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Image Styling */
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Content Styling */
+        .content {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 6rem;
+        }
+
+        .content h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <h1>QuickBaskets</h1>
+            </div>
+            <nav>
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="image">
+            <img src="./images/hero-section.jpg" alt="Grocery Shopping">
+        </div>
+        <div class="content">
+            <h2>Smart Grocery List Generator</h2>
+            <p>
+                DailyMart is your one-stop online grocery store, designed to make your everyday shopping fast, easy, and convenient. 
+                We bring fresh produce, quality pantry staples, and essential household items right to your doorstep. 
+                With an intuitive interface, smart product search, and seamless checkout, DailyMart ensures a hassle-free shopping experience. 
+                Whether it's farm-fresh fruits and vegetables, dairy products, or everyday essentials, we've got you covered.
+                Shop smarter, save time, and enjoy fresh deliveries—every day, with DailyMart!
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Your Website</p>
+    </footer>
+</body>
+</html>
